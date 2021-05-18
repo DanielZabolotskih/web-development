@@ -1,11 +1,11 @@
 <?php 
     $text = isset($_GET['text']) ? $_GET['text'] : null;
-
+    echo $text . '<br>';
     if ($text !== null)
     {
-        $currChar = ' ';
-        $oldChar = ' ';
-        $printedChar = ' ';
+        $currChar = '';
+        $oldChar = '';
+        $printedChar = '';
 
         for ($i = 0; $i < strlen($text); $i++)
         {
@@ -18,9 +18,9 @@
                 echo $printedChar;
             }
 
-            if ($currChar === ' ' and $oldChar !== ' ' and $printedChar !== ' ')
+            if ($currChar === '' && $oldChar !== '' && $printedChar !== '')
             {
-                $printedChar = ' ';
+                $printedChar = '';
                 echo $printedChar;
             }
         }
