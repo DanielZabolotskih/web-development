@@ -10,7 +10,7 @@
         for ($i = 0; $i < strlen($text); $i++)
         {
             $oldChar = $currChar;
-            $cuttChar = $text[$i];
+            $currChar = $text[$i];
             
             if ($currChar !== ' ')
             {
