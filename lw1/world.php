@@ -1,10 +1,2 @@
 <?php
     echo 'Hello World!';
-
-
-
-
-
-
-
-    
